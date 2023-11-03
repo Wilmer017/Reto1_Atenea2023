@@ -15,7 +15,12 @@ public class PuntoControl : MonoBehaviour
         if (collision != null)
             if (collision.gameObject.name == "Player")
             {
-                controlador.Parte = PartePuntoControl;
+                if (controlador.Parte < PartePuntoControl)
+                {
+                    controlador.Parte = PartePuntoControl;
+                    controlador.FrutaNivelRecogida = -1;
+                }
+
                 if (SiguienteNivel)
                 {
                     PlayerPrefs.SetInt("Parte.Persite", 0);
