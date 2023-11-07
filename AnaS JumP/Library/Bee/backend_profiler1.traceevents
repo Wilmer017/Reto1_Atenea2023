@@ -1,0 +1,511 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1699400132283319, "dur":2309, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132285633, "dur":47, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1699400132285691, "dur":17, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1699400132285708, "dur":276, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1699400132286011, "dur":685, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132286696, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947170, "dur":253, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947423, "dur":27, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947450, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947453, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947466, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947468, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947475, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947478, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947485, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947486, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947491, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947493, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947502, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947525, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132947549, "dur":8652, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1699400132286888, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132286889, "dur":6334, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132293226, "dur":737, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1699400132293972, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132297002, "dur":11710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1699400132308761, "dur":945, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1699400132309722, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132309745, "dur":4308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1699400132314108, "dur":9587, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1699400132323701, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132323711, "dur":2642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1699400132326400, "dur":16743, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1699400132343150, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132343206, "dur":3396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1699400132346785, "dur":75498, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132422291, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132422322, "dur":4316, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132426682, "dur":49026, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132475714, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132475725, "dur":3053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132479210, "dur":34934, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132514230, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132514238, "dur":1927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132516214, "dur":43961, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132560184, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132560194, "dur":5745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132565987, "dur":46018, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132612046, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132612057, "dur":5611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132617859, "dur":283, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132618145, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132618154, "dur":4392, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132622599, "dur":517, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132623123, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132623134, "dur":3428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132626604, "dur":303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132626910, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132626918, "dur":6958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132633937, "dur":31746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132665690, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132665701, "dur":5949, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132671704, "dur":57212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132728921, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132728931, "dur":7361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132736945, "dur":67514, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132804466, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132804478, "dur":1724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132806245, "dur":281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132806531, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132806541, "dur":4055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132810637, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132810794, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132810802, "dur":2274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132813372, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132813558, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132813566, "dur":1532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132815142, "dur":214, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132815359, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132815409, "dur":1502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132816950, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132817141, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132817149, "dur":1288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132818475, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132818735, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132818742, "dur":1974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132820764, "dur":3719, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132824489, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132824500, "dur":10066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132834611, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132834771, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132834778, "dur":4246, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132839082, "dur":282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132839368, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132839378, "dur":3770, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132843201, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132843446, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132843455, "dur":2591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132846092, "dur":3169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132849308, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132849316, "dur":13789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132863153, "dur":1299, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132864456, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132864463, "dur":3725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132868232, "dur":315, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132868551, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132868557, "dur":6201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699400132874812, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1699400132874865, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132874876, "dur":2925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1699400132877992, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets4.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1699400132878094, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132878103, "dur":50982, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets4.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1699400132929134, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level5" }}
+,{ "pid":12345, "tid":1, "ts":1699400132929187, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132929198, "dur":3719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level5" }}
+,{ "pid":12345, "tid":1, "ts":1699400132933478, "dur":987, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level2" }}
+,{ "pid":12345, "tid":1, "ts":1699400132934504, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699400132934518, "dur":9705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level2" }}
+,{ "pid":12345, "tid":1, "ts":1699400132944510, "dur":2655, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132286810, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132286811, "dur":6519, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132293332, "dur":25906, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1699400132319242, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132319257, "dur":6463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1699400132325762, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1699400132325884, "dur":25, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132325919, "dur":4789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1699400132330760, "dur":5418, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132336189, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132336364, "dur":4486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132340914, "dur":23748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":2, "ts":1699400132364671, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132364684, "dur":5003, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":2, "ts":1699400132369740, "dur":43221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132413062, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132413073, "dur":4998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132418132, "dur":64871, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132483008, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132483019, "dur":1501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132484558, "dur":29585, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132514147, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132514253, "dur":2204, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132516538, "dur":91035, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132607578, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132607586, "dur":1604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132609227, "dur":28930, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132638165, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132638177, "dur":1945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132640162, "dur":283, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132640449, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132640458, "dur":1318, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132641817, "dur":39246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132681107, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132681119, "dur":1597, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132682755, "dur":35629, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132718393, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132718487, "dur":3512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132722038, "dur":230, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132722271, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132722280, "dur":4091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132726416, "dur":44713, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132771135, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132771148, "dur":1959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132773154, "dur":158256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132932574, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132932591, "dur":9234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699400132942427, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1699400132942570, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699400132942578, "dur":3043, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1699400132945734, "dur":1442, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132286899, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132286899, "dur":6199, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132293107, "dur":382, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1699400132293499, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132296628, "dur":7524, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1699400132304205, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1699400132304340, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132304418, "dur":3848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1699400132308357, "dur":14891, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1699400132323254, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132323267, "dur":3212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1699400132326532, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1699400132326652, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132326718, "dur":3893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1699400132330684, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1699400132330839, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132330854, "dur":6436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1699400132337391, "dur":97889, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132435286, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132435295, "dur":36051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132471387, "dur":24402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132495795, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132495806, "dur":1946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132497790, "dur":21603, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132519399, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132519409, "dur":2379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132521828, "dur":186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132522016, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132522025, "dur":4428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132526500, "dur":774, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132527280, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132527291, "dur":1672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132529003, "dur":1326, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132530335, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132530343, "dur":3272, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132533672, "dur":571, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132534248, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132534256, "dur":2662, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132536964, "dur":30205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132567176, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132567188, "dur":1539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132568783, "dur":40572, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132609360, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132609369, "dur":13858, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132623281, "dur":36040, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132659327, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132659338, "dur":2215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132661594, "dur":24980, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132686582, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132686596, "dur":4124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132690760, "dur":1344, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132692110, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132692120, "dur":6690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132698850, "dur":29171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132728027, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132728037, "dur":1416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132729497, "dur":133932, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132863435, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132863445, "dur":2504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132866012, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132866255, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132866263, "dur":1650, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132867962, "dur":385, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132868350, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132868360, "dur":8332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699400132876740, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":3, "ts":1699400132876785, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132876794, "dur":3403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":3, "ts":1699400132880261, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":3, "ts":1699400132880305, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132880314, "dur":30557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":3, "ts":1699400132911033, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1699400132911091, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132911098, "dur":2737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1699400132913877, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1699400132913913, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132913920, "dur":4708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1699400132918681, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1699400132918721, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132918728, "dur":6744, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1699400132925513, "dur":14794, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1699400132940316, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132940329, "dur":2680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1699400132943050, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1699400132943234, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699400132943243, "dur":2175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1699400132945462, "dur":1722, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132287019, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132287020, "dur":6185, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132293217, "dur":25456, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1699400132318724, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132318749, "dur":6967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1699400132325761, "dur":17260, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1699400132343031, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132343052, "dur":2184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1699400132345283, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1699400132345473, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132345527, "dur":16673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1699400132362400, "dur":24991, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132387398, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132387512, "dur":4558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132392123, "dur":43583, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132435710, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132435718, "dur":36012, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132471773, "dur":101576, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132573356, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132573367, "dur":3264, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132576677, "dur":30443, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132607128, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132607139, "dur":7156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132614336, "dur":43341, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132657685, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132657697, "dur":6506, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132664249, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132664429, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132664437, "dur":1700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132666190, "dur":22543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132688741, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132688753, "dur":1892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132690686, "dur":27854, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132718545, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132718555, "dur":9862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132728461, "dur":295, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132728760, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132728769, "dur":1926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132730738, "dur":47288, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132778034, "dur":29, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132778077, "dur":3177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132781297, "dur":148381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132929684, "dur":19, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132929712, "dur":8974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699400132938735, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1699400132938777, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699400132938786, "dur":6636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1699400132945464, "dur":1731, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132286873, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132286874, "dur":6103, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132292995, "dur":48489, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1699400132341490, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132341643, "dur":3484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1699400132345178, "dur":83937, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP.exe" }}
+,{ "pid":12345, "tid":5, "ts":1699400132429121, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132429131, "dur":3815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP.exe" }}
+,{ "pid":12345, "tid":5, "ts":1699400132432989, "dur":56176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132489171, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132489181, "dur":3174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132492396, "dur":21746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132514147, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132514246, "dur":2267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132516572, "dur":28644, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132545225, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132545239, "dur":2207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132547482, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132547663, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132547671, "dur":1611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132549322, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132549511, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132549520, "dur":1472, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132551034, "dur":330, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132551368, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132551376, "dur":2361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132553803, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132554046, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132554054, "dur":2263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132556499, "dur":21335, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132577840, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132577851, "dur":1682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132579579, "dur":18896, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132598515, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132598529, "dur":1600, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132600168, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132600340, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132600347, "dur":1950, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132602338, "dur":25475, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132627820, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132627829, "dur":3314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132631191, "dur":37696, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132668895, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132668969, "dur":2731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132671753, "dur":35464, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132707226, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132707240, "dur":3683, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132710964, "dur":31313, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132742283, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132742293, "dur":2094, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132744428, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132744687, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132744695, "dur":1438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132746173, "dur":445, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132746622, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132746632, "dur":1983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132748658, "dur":769, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132749431, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132749441, "dur":2367, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132751866, "dur":263, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132752133, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132752145, "dur":1864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132754051, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132754226, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132754235, "dur":1627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132755906, "dur":492, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132756404, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132756413, "dur":2331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132758787, "dur":70540, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132829333, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132829371, "dur":4267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132833684, "dur":1045, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132834733, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132834745, "dur":8384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132843184, "dur":323, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132843510, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132843516, "dur":2251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132845842, "dur":3390, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132849238, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132849302, "dur":14403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132863753, "dur":546, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132864303, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132864312, "dur":2621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132866979, "dur":7182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132874167, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132874179, "dur":7744, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699400132881965, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699400132882010, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132882017, "dur":29083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699400132911139, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699400132911182, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132911187, "dur":2877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699400132914105, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699400132914143, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132914148, "dur":6598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699400132920793, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699400132920831, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132920846, "dur":4557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699400132925461, "dur":826, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1699400132926292, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132926303, "dur":4444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1699400132930800, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level4" }}
+,{ "pid":12345, "tid":5, "ts":1699400132930844, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132930852, "dur":2473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level4" }}
+,{ "pid":12345, "tid":5, "ts":1699400132933372, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level3" }}
+,{ "pid":12345, "tid":5, "ts":1699400132933411, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132933420, "dur":8784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level3" }}
+,{ "pid":12345, "tid":5, "ts":1699400132942253, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699400132942303, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699400132942354, "dur":4703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699400132947117, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":5, "ts":1699400132947121, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132286800, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132286801, "dur":6167, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132292995, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":6, "ts":1699400132293012, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132298113, "dur":593, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":6, "ts":1699400132298711, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/app.info" }}
+,{ "pid":12345, "tid":6, "ts":1699400132298769, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132298811, "dur":4225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/app.info" }}
+,{ "pid":12345, "tid":6, "ts":1699400132303046, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1699400132303236, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132303250, "dur":10903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1699400132315089, "dur":3569, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1699400132318666, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132318678, "dur":5325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1699400132324046, "dur":393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1699400132324444, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132324589, "dur":3204, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1699400132327854, "dur":287, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":6, "ts":1699400132328147, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132328168, "dur":4350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":6, "ts":1699400132332565, "dur":71941, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132404513, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132404527, "dur":19582, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132424156, "dur":55753, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132479951, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132479961, "dur":1571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132481569, "dur":29242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132510816, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132510826, "dur":3263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132514135, "dur":92992, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132607132, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132607142, "dur":1903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132609090, "dur":186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132609279, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132609289, "dur":6005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132615380, "dur":25955, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132641340, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132641351, "dur":2681, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132644073, "dur":363, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132644440, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132644450, "dur":1720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132646215, "dur":336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132646555, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132646563, "dur":1663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132648288, "dur":36360, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132684655, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132684665, "dur":5951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132690668, "dur":802, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132691475, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132691484, "dur":6972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132698498, "dur":26988, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132725523, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132725536, "dur":1910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132727490, "dur":32746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132760242, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132760254, "dur":2301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132762665, "dur":54847, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132817516, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132817523, "dur":5617, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132823184, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132823364, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132823371, "dur":1918, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132825330, "dur":544, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132825880, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132825901, "dur":6855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132832907, "dur":555, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132833466, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132833475, "dur":1562, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132835080, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132835339, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132835346, "dur":4052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132839438, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132839625, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132839631, "dur":6124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132845807, "dur":708, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132846518, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132846526, "dur":1963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132848532, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132848720, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132848728, "dur":14480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132863284, "dur":297, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132863584, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132863590, "dur":5000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132868629, "dur":57547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132926183, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132928283, "dur":7717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699400132936156, "dur":312, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1699400132936473, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699400132936482, "dur":9178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/ATENEA/CarpetaMadreRepositorio/Reto1_Atenea2023/Ejecutable/AnaS JumP_Data/level1" }}
+,{ "pid":12345, "tid":6, "ts":1699400132945873, "dur":1294, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699400132971094, "dur":2997, "ph":"X", "name": "ProfilerWriteOutput" }
+,

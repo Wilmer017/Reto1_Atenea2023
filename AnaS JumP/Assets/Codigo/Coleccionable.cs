@@ -1,7 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Animator))]
 public class Coleccionable : MonoBehaviour
 {
     public ControladorEscena controlador;
@@ -20,7 +22,11 @@ public class Coleccionable : MonoBehaviour
     {
         if (collision != null)
         {
-            controlador.RecogerFruta(FrutaID);
+            if (SceneManager.GetActiveScene().name.StartsWith("Nivel"))
+                controlador.FrutaNivelRecogida = FrutaID;
+            else
+                controlador.RecogerFruta(FrutaID);
+
             Destroy(gameObject);
         }
     }

@@ -9,9 +9,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public string[] Mandos;
+    public int JugadorId;
+    public bool Vivo = true;
 
-    public int JugadorId = 0;
     public ControladorEscena controlador;
     public float gravityScale = 2f;
     public float maxSpeed = 5f;
@@ -50,20 +50,8 @@ public class PlayerController : MonoBehaviour
         PielActual = 1;
 
         r2d.gravityScale = gravityScale;
-
-        ActualizarMandos();
     }
 
-    void ActualizarMandos()
-    {
-        Mandos = Input.GetJoystickNames();
-        if (Mandos != null)
-            if (Mandos.Length == 1)
-                if (Mandos[0] == "")
-                    print("Mando no Detectado");
-                else
-                    print("Mando : " + Mandos[0]);
-    }
     void CambioPersonaje()
     {
         switch (PielActual)
@@ -127,63 +115,87 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Corriendo = Input.GetAxis("Eje Correr " + JugadorId);
-        Saltando = Input.GetButton("Boton Salto " + JugadorId);
+        if (Vivo)
+        {
+            Corriendo = Input.GetAxis("Eje Correr " + JugadorId);
+            Saltando = Input.GetButton("Boton Salto " + JugadorId);
 
-        Collider2D PieDerecho = Physics2D.Raycast(transform.position + Vector3.right * 0.3f + Vector3.down * 0.88f , Vector2.down, 0.12f).collider;
-        Collider2D PieIzquierdo = Physics2D.Raycast(transform.position + Vector3.left * 0.3f + Vector3.down * 0.88f, Vector2.down, 0.12f).collider;
-        //Debug.DrawRay(transform.position + Vector3.right * 0.3f + Vector3.down * 0.88f, Vector2.down * 0.12f);
-        //Debug.DrawRay(transform.position + Vector3.left * 0.3f + Vector3.down * 0.88f, Vector2.down * 0.12f);
-        if (PieDerecho != null && PieIzquierdo != null)
-        {
-            if (PieDerecho.gameObject.name != "Detector" && PieDerecho.gameObject.name != "PuntoControl" ||
-                PieIzquierdo.gameObject.name != "Detector" && PieIzquierdo.gameObject.name != "PuntoControl")
-                isGrounded = true;
-            if (PieDerecho.gameObject.name == "Magma" || PieIzquierdo.gameObject.name == "Magma")
-                controlador.Muerto();
+            Collider2D PieDerecho = Physics2D.Raycast(transform.position + Vector3.right * 0.3f + Vector3.down * 0.88f, Vector2.down, 0.12f).collider;
+            Collider2D PieIzquierdo = Physics2D.Raycast(transform.position + Vector3.left * 0.3f + Vector3.down * 0.88f, Vector2.down, 0.12f).collider;
+            //Debug.DrawRay(transform.position + Vector3.right * 0.3f + Vector3.down * 0.88f, Vector2.down * 0.12f);
+            //Debug.DrawRay(transform.position + Vector3.left * 0.3f + Vector3.down * 0.88f, Vector2.down * 0.12f);
+
+            TocaPiso(PieDerecho, PieIzquierdo);
+
+            Collider2D LadoArriba = Physics2D.Raycast(transform.position + Vector3.right * Corriendo * 0.43f + Vector3.up * 0.25f, Vector2.right, 0.12f * Corriendo).collider;
+            Collider2D LadoAbajo = Physics2D.Raycast(transform.position + Vector3.right * Corriendo * 0.43f + Vector3.down * 0.7f, Vector2.right, 0.12f * Corriendo).collider;
+            //Debug.DrawRay(transform.position + Vector3.right * Corriendo * 0.43f + Vector3.up * 0.25f, Vector2.right * 0.12f * Corriendo);
+            //Debug.DrawRay(transform.position + Vector3.right * Corriendo * 0.43f + Vector3.down * 0.7f, Vector2.right * 0.12f * Corriendo);
+
+            TocaPared(LadoArriba, LadoAbajo);
         }
-        else if (PieDerecho != null && PieIzquierdo == null)
+    }
+
+    void TocaPiso(Collider2D Objeto1, Collider2D Objeto2)
+    {
+        if (Objeto1 != null)
         {
-            if (PieDerecho.gameObject.name != "Detector" && PieDerecho.gameObject.name != "PuntoControl")
+            if (Filtro(Objeto1.gameObject.name))
+            {
+                MalCausado(Objeto1.gameObject.name);
                 isGrounded = true;
-            if (PieDerecho.gameObject.name == "Magma")
-                controlador.Muerto();
+                return;
+            }
         }
-        else if (PieDerecho == null && PieIzquierdo != null)
+        else if (Objeto2 != null)
         {
-            if (PieIzquierdo.gameObject.name != "Detector" && PieIzquierdo.gameObject.name != "PuntoControl")
+            if (Filtro(Objeto2.gameObject.name))
+            {
+                MalCausado(Objeto2.gameObject.name);
                 isGrounded = true;
-            if (PieIzquierdo.gameObject.name == "Magma")
-                controlador.Muerto();
-        }
-        else
-        {
-            isGrounded = false;
+                return;
+            }
         }
 
-        Collider2D LadoArriba = Physics2D.Raycast(transform.position + Vector3.right * Corriendo * 0.43f + Vector3.up * 0.25f, Vector2.right, 0.12f * Corriendo).collider;
-        Collider2D LadoAbajo = Physics2D.Raycast(transform.position + Vector3.right * Corriendo * 0.43f + Vector3.down * 0.7f, Vector2.right, 0.12f * Corriendo).collider;
-        //Debug.DrawRay(transform.position + Vector3.right * Corriendo * 0.43f + Vector3.up * 0.25f, Vector2.right * 0.12f * Corriendo);
-        //Debug.DrawRay(transform.position + Vector3.right * Corriendo * 0.43f + Vector3.down * 0.7f, Vector2.right * 0.12f * Corriendo);
-        if (LadoArriba != null && LadoAbajo != null)
+        isGrounded = false;
+    }
+    void TocaPared(Collider2D Objeto1, Collider2D Objeto2)
+    {
+        if (Objeto1 != null)
         {
-            if (LadoArriba.gameObject.name != "Detector" && LadoArriba.gameObject.name != "PuntoControl" && !LadoArriba.gameObject.name.StartsWith("Player") ||
-                LadoAbajo.gameObject.name != "Detector" && LadoAbajo.gameObject.name != "PuntoControl" && !LadoAbajo.gameObject.name.StartsWith("Player"))
+            if (Filtro(Objeto1.gameObject.name))
+            {
                 isWall = true;
+                return;
+            }
         }
-        else if (LadoArriba != null && LadoAbajo == null)
+        else if (Objeto2 != null)
         {
-            if (LadoArriba.gameObject.name != "Detector" && LadoArriba.gameObject.name != "PuntoControl" && !LadoArriba.gameObject.name.StartsWith("Player"))
+            if (Filtro(Objeto2.gameObject.name))
+            {
                 isWall = true;
+                return;
+            }
         }
-        else if (LadoArriba == null && LadoAbajo != null)
-        {
-            if (LadoAbajo.gameObject.name != "Detector" && LadoAbajo.gameObject.name != "PuntoControl" && !LadoAbajo.gameObject.name.StartsWith("Player"))
-                isWall = true;
+
+        isWall = false;
+    }
+    bool Filtro(string Toco)
+    {
+        if(Toco.StartsWith("Detector")) return false;
+        else if(Toco.StartsWith("Player")) return false;
+        else if(Toco.StartsWith("Bandera")) return false;
+        else if(Toco.StartsWith("PuntoControl")) return false;
+        else return true;
+    }
+
+    void MalCausado(string Toco)
+    {
+        if (Toco.StartsWith("Magma")) {
+            controlador.Herido("Te has hundido en Lava");
         }
-        else
-        {
-            isWall = false;
+        else if (Toco.StartsWith("Fuego")) {
+            controlador.Herido("Te has quemado con Candela");
         }
     }
 }

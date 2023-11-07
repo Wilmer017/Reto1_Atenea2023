@@ -1,13 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 
 public class Boton_UI : MonoBehaviour
 {
-    public ControladorEscena controlador;
+    public ControladorVistaNivel controladorVista;
     public bool Cae = false;
     public float Segundos = 0.2f;
     public Rigidbody2D Cuerpo;
@@ -16,30 +14,30 @@ public class Boton_UI : MonoBehaviour
     private void Start()
     {
         if (transform.parent.gameObject.name.Equals("Boton Jugar"))
-            AccionBoton = controlador.Jugar;
+            AccionBoton = controladorVista.controlador.CargarNiveles;
         else if (transform.parent.gameObject.name.Equals("Boton Restablecer"))
-            AccionBoton = controlador.Restablecer;
+            AccionBoton = controladorVista.controlador.Restablecer;
         else if (transform.parent.gameObject.name.Equals("Boton Opciones"))
-            AccionBoton = controlador.Opciones;
+            AccionBoton = controladorVista.controlador.Opciones;
         else if (transform.parent.gameObject.name.Equals("Boton Creditos"))
-            AccionBoton = controlador.Creditos;
+            AccionBoton = controladorVista.controlador.Creditos;
         else if (transform.parent.gameObject.name.Equals("Boton Salir"))
-            AccionBoton = controlador.Salir;
+            AccionBoton = controladorVista.controlador.Salir;
         else if (transform.parent.gameObject.name.Equals("Boton Nivel 1"))
-            AccionBoton = controlador.Nivel1;
+            AccionBoton = controladorVista.controlador.Nivel1;
         else if (transform.parent.gameObject.name.Equals("Boton Nivel 2"))
-            AccionBoton = controlador.Nivel2;
+            AccionBoton = controladorVista.controlador.Nivel2;
         else if (transform.parent.gameObject.name.Equals("Boton Volver Principal"))
-            AccionBoton = controlador.MenuPrincipal;
+            AccionBoton = controladorVista.controlador.MenuPrincipal;
         else if (transform.parent.gameObject.name.Equals("Boton Reiniciar"))
-            AccionBoton = controlador.Reiniciar;
+            AccionBoton = controladorVista.controlador.Reiniciar;
         else if (transform.parent.gameObject.name.Equals("Boton Reiniciar Inicio"))
-            AccionBoton = controlador.ReiniciarInicio;
+            AccionBoton = controladorVista.controlador.ReiniciarInicio;
 
         else if (transform.parent.gameObject.name.Equals("Boton Pausa"))
-            AccionBoton = controlador.Pausa;        
+            AccionBoton = controladorVista.controlador.Pausa;        
         else if (transform.parent.gameObject.name.Equals("Boton Volver Juego"))
-            AccionBoton = controlador.Reanudar;
+            AccionBoton = controladorVista.controlador.Reanudar;
         else
             AccionBoton = null;
 
@@ -56,13 +54,12 @@ public class Boton_UI : MonoBehaviour
             if (Cae)
                 Cuerpo.bodyType = RigidbodyType2D.Dynamic;
 
-            if (AccionBoton != null)
-                StartCoroutine(Despues(AccionBoton));
+            StartCoroutine(Despues());
 
-            IEnumerator Despues(UnityAction Accion)
+            IEnumerator Despues()
             {
                 yield return new WaitForSecondsRealtime(1f);
-                Accion.Invoke();
+                transform.parent.GetComponent<Button>().onClick.Invoke();
             }
         }
     }

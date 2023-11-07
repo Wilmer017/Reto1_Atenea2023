@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CamaraControler : MonoBehaviour
 {
-    public PlayerController Player;
-    public Transform Lava;
+    public int CampoVision;
 
     void Start()
     {

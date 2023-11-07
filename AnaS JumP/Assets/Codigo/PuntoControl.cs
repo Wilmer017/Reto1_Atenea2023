@@ -18,7 +18,12 @@ public class PuntoControl : MonoBehaviour
                 if (controlador.Parte < PartePuntoControl)
                 {
                     controlador.Parte = PartePuntoControl;
-                    controlador.FrutaNivelRecogida = -1;
+
+                    if(controlador.FrutaNivelRecogida != -1)
+                        controlador.RecogerFruta(controlador.FrutaNivelRecogida);
+
+                    if (controlador.controladorNivel != null)
+                        controlador.controladorNivel.ReiniciarTiempo();
                 }
 
                 if (SiguienteNivel)

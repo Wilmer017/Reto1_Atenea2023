@@ -18,14 +18,7 @@ public class IzarBandera : MonoBehaviour
             {
                 AnimadorBandera.enabled = true;
                 Controlador.HazGanado();
-                StartCoroutine(DespuesDeGanarMenu());
             }
         }
-    }
-
-    IEnumerator DespuesDeGanarMenu()
-    {
-        yield return new WaitForSecondsRealtime(4f);
-        Controlador.ComandoVolverPrincipal();
     }
 }

@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class ControladorEscena : MonoBehaviour
 {
@@ -11,14 +7,15 @@ public class ControladorEscena : MonoBehaviour
     public PlayerController JugadorControl;
     public CamaraControler CamaraControl;
     public LavaControler Lavacontrol;
-    public Transform Canvas;
+    public Transform CanvasEscena;
+    public ControladorNivel controladorNivel;
 
-    public int VidasJugador = 5;
     public int[] FrutasRecogidas;
     public Transform[] PuntosControl;
+
     public int Parte = 0;
     public int EstrellasRecolectadas = 0;
-    public int FrutaNivelRecogida = -1;
+    public int FrutaNivelRecogida = 0;
 
 
     public float X = 15;
@@ -26,7 +23,17 @@ public class ControladorEscena : MonoBehaviour
 
     private void Start()
     {
-        FrutasRecogidas = new int[11];
+        if(controladorNivel == null)
+            PlayerPrefs.SetInt("Vidas.Persite", 1);
+        else
+        {
+            int Vida = PlayerPrefs.GetInt("Vidas.Persite", 0);
+            if (Vida == 0)
+                PlayerPrefs.SetInt("Vidas.Persite", controladorNivel.VidasJugador);
+        }
+
+
+        FrutasRecogidas = new int[20];
         NombreEscena = SceneManager.GetActiveScene().name;
         Parte = PlayerPrefs.GetInt("Parte.Persite", 0);
 
@@ -42,67 +49,74 @@ public class ControladorEscena : MonoBehaviour
 
         JugadorControl.transform.position = JugadorControl.PuntoAparicion;
 
-        ActualizaCorazones();
         ActualizaFrutas();
+
+        if(controladorNivel != null)
+            controladorNivel.ActualizaCorazones();
     }
     void Update()
     {
         Desplazar();
+
+        if(controladorNivel != null)
+            controladorNivel.Cronometro();
     }
 
 
     void Desplazar()
     {
-        if (JugadorControl.transform.position.x > CamaraControl.transform.position.x + X - 1)
+        bool SeMovio = false;
+        Vector3 PosicionJugador = JugadorControl.transform.position;
+        Vector3 PosicionCamara = CamaraControl.transform.position;
+
+        if (PosicionJugador.x > PosicionCamara.x + X - 1)
         {
+            SeMovio = true;
             CamaraControl.transform.position += Vector3.right * (X * 2);
-            Lavacontrol.transform.position = new Vector3(CamaraControl.transform.position.x, 0, 0);
-            JugadorControl.PuntoAparicion += Vector2.right * (X * 2);
         }
-        if (JugadorControl.transform.position.x < CamaraControl.transform.position.x - X - 1)
+        else if (PosicionJugador.x < PosicionCamara.x - X - 1)
         {
+            SeMovio = true;
             CamaraControl.transform.position += Vector3.left * (X * 2);
+        }
+        if (PosicionJugador.y > PosicionCamara.y + Y - 1)
+        {
+            SeMovio = true;
+            CamaraControl.transform.position += Vector3.up * (Y * 2);
+        }
+        else if (PosicionJugador.y < PosicionCamara.y - Y - 1)
+        {
+            SeMovio = true;
+            CamaraControl.transform.position += Vector3.down * (Y * 2);
+        }
+
+        if(SeMovio)
+        {
             Lavacontrol.transform.position = new Vector3(CamaraControl.transform.position.x, 0, 0);
-            JugadorControl.PuntoAparicion += Vector2.left * (X * 2);
         }
     }
 
     public void RecogerFruta(int FrutaRecogida)
     {
-        FrutaNivelRecogida = FrutaRecogida;
         PlayerPrefs.SetInt("Fruta" + FrutaRecogida + ".Persite", 1);
         ActualizaFrutas();
     }
     public void ActualizaFrutas()
     {
-        Transform TFrutas = Canvas.Find("Frutas Coleccion");
+        for (int i = 0; i < FrutasRecogidas.Length; i++)
+        {
+            FrutasRecogidas[i] = PlayerPrefs.GetInt("Fruta" + i + ".Persite", 0);
+        }
+
+        Transform TFrutas = CanvasEscena.Find("Frutas Coleccion");
         if (TFrutas!= null)
         {
             for (int i = 0; i < FrutasRecogidas.Length; i++)
             {
-                FrutasRecogidas[i] = PlayerPrefs.GetInt("Fruta" + i + ".Persite", 0);
                 if (FrutasRecogidas[i] == 1)
-                    TFrutas.GetChild(i).gameObject.SetActive(true);
+                    TFrutas.GetChild(i).GetComponent<SpriteRenderer>().enabled = true;
                 else
-                    TFrutas.GetChild(i).gameObject.SetActive(false);
-            }
-        }
-    }
-
-    public void ActualizaCorazones()
-    {
-        VidasJugador = PlayerPrefs.GetInt("Vidas.Persite", 0);
-
-        Transform Tcorazones = Canvas.Find("Panel Corazones");
-        if(Tcorazones != null)
-        {
-            print(Tcorazones.gameObject.name);
-            for (int i = 0; i < Tcorazones.childCount; i++)
-            {
-                if (i < VidasJugador)
-                    Tcorazones.GetChild(i).gameObject.SetActive(true);
-                else
-                    Tcorazones.GetChild(i).gameObject.SetActive(false);
+                    TFrutas.GetChild(i).GetComponent<SpriteRenderer>().enabled = false;
             }
         }
     }
@@ -112,56 +126,25 @@ public class ControladorEscena : MonoBehaviour
         SceneManager.LoadScene("Menu_Principal");
     }
 
-    public void Muerto()
+    public void Herido(string CausaMuerte)
     {
-        if (FrutaNivelRecogida > 0)
-            PlayerPrefs.SetInt("Fruta" + FrutaNivelRecogida + ".Persite", 0);
-        ActualizaFrutas();
+        JugadorControl.Vivo = false;
 
-        if (VidasJugador > 1)
+        if (controladorNivel != null)
         {
-            VidasJugador--;
-            PlayerPrefs.SetInt("Vidas.Persite", VidasJugador);
-            Reintentar();
-        }
-        else if (SceneManager.GetActiveScene().name.StartsWith("Nivel"))
-        {
-            PlayerPrefs.SetInt("Parte.Persite", 0);
-            SceneManager.LoadScene("Menu_Niveles");
+            controladorNivel.CausaMuerte = CausaMuerte;
+            controladorNivel.DescontarVidas();
         }
         else
-        {
-            PlayerPrefs.SetInt("Parte.Persite", 0);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-    }
-    public void Reintentar()
-    {
-        if(SceneManager.GetActiveScene().name.StartsWith("Nivel"))
-            StartCoroutine(Despues());
-        else
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
-        IEnumerator Despues()
-        {
-            Transform T = Canvas.Find("Panel Muerto");
-            Time.timeScale = 0.025f;
-
-            T.Find("Texto del boton").gameObject.GetComponent<Text>().text = VidasJugador + " Vidas Restantes";
-            T.gameObject.SetActive(true);
-            yield return new WaitForSecondsRealtime(0.5f);
-
-            Time.timeScale = 1;
-            PlayerPrefs.SetInt("Parte.Persite", Parte);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            T.gameObject.SetActive(false);
-        }
+            Reiniciar();
     }
     public void HazGanado()
     {
-        Debug.Log("Haz Ganado");
+        if (controladorNivel != null && JugadorControl.Vivo == true)
+        {
+            controladorNivel.NivelSuperado();
+        }
     }
-
 
     public void Restablecer()
     {
@@ -175,9 +158,10 @@ public class ControladorEscena : MonoBehaviour
     {
         Time.timeScale = 1;
         PlayerPrefs.SetInt("Parte.Persite", 0);
+
         SceneManager.LoadScene("Menu_Principal");
     }
-    public void Jugar()
+    public void CargarNiveles()
     {
         Time.timeScale = 1;
         PlayerPrefs.SetInt("Parte.Persite", 0);
@@ -219,28 +203,33 @@ public class ControladorEscena : MonoBehaviour
     public void Reiniciar()
     {
         Time.timeScale = 1;
+        PlayerPrefs.SetInt("Parte.Persite", Parte);
+        if (controladorNivel != null)
+            controladorNivel.ReiniciarTiempo();
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void ReiniciarInicio()
     {
         Time.timeScale = 1;
-        PlayerPrefs.SetInt("Vidas.Persite", 5);
+        PlayerPrefs.SetInt("Vidas.Persite", 0);
         PlayerPrefs.SetInt("Parte.Persite", 0);
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void Pausa()
     {
         Time.timeScale = 0;
-        Transform BotonPausa = Canvas.Find("Boton Pausa");
-        Transform Panel = Canvas.Find("Panel Pausa");
+        Transform BotonPausa = CanvasEscena.Find("Boton Pausa");
+        Transform Panel = CanvasEscena.Find("Panel Pausa");
         BotonPausa.gameObject.SetActive(false);
         Panel.gameObject.SetActive(true);
     }
     public void Reanudar()
     {
         Time.timeScale = 1;
-        Transform BotonPausa = Canvas.Find("Boton Pausa");
-        Transform Panel = Canvas.Find("Panel Pausa");
+        Transform BotonPausa = CanvasEscena.Find("Boton Pausa");
+        Transform Panel = CanvasEscena.Find("Panel Pausa");
         BotonPausa.gameObject.SetActive(true);
         Panel.gameObject.SetActive(false);
     }
